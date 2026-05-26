@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class Apple extends Actor
 {
-    int speed = 1;
+    int speed = 5;
     
     public void act()
     {
@@ -11,7 +11,7 @@ public class Apple extends Actor
         
         int x = getX();
         int y = getY() + 2;
-        setLocation(getX(), getY() + 1);
+        setLocation(getX(), getY() + 3);
         
         MyWorld world = (MyWorld) getWorld();
         if(getY() >= world.getHeight())
